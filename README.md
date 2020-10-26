@@ -15,11 +15,11 @@ Multithreading enhances a programs running in speed, responsiveness, scalability
 
 What are the three most common problems with multithreading?
 ------------------------------------------------------------
-A common problem is when different threads interfere with each other when sharing resources. Furthermore the complexity of a program increases. Testing can also be more difficult. 
+A common problem is when different threads interfere with each other when sharing resources. Furthermore the complexity of a program increases. Testing can also be more difficult. Also one of the below problems can occur. 
 
 - Deadlock
 - Race condition
-- Stack Overflow
+- Memory problems/inconsistency 
 
 
 
