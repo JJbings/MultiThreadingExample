@@ -20,14 +20,13 @@ public class Main {
         thread3.join();
         thread4.join();
 
-        System.out.println(counter.count);
-        System.out.println(counter.count2);
+        System.out.println("Number 1 :"+counter.count);
+        System.out.println("Number 2 :"+counter.count2);
         counter.finish1 = counter.end1 - counter.start1;
         counter.finish2 = counter.end2 - counter.start2;
         System.out.println("Time 1: " + counter.finish1);
         System.out.println("Time 2: " + counter.finish2);
-        System.out.println(counter.start1);
-        System.out.println(counter.start2);
+
 
 
 
@@ -78,11 +77,11 @@ class Counter {
     long end2;
     long finish1;
     long finish2;
-    int count = 0;
+     int  count = 0;
     int count2 = 0;
 
 
-    synchronized public void add() {
+   synchronized   public void add() {
         for (int i = 0; i < 100000; i++) {
 
             count++;
@@ -90,9 +89,8 @@ class Counter {
         }
     }
 
-    synchronized public void add2() {
+      public void add2() {
         count2++;
     }
 }
-
 
